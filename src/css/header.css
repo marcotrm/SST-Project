@@ -14,8 +14,15 @@
   color: white;
 }
 
+.logo-cnt {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  width: 20%;
+  width: 100px;
+  max-width: 80%;
+  height: auto;
   padding-left: 15px;
 }
 
@@ -45,4 +52,20 @@
 .nav-links a:hover {
   background-color: #5c6bc0;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+    max-width: 90%;
+  }
+
+  .nav-links {
+    gap: 10px;
+    margin-top: 10px;
+  }
 }
