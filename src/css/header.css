@@ -6,14 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.header {
-  background-color: #3c56b6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-
 .logo {
   width: 100px;
   max-width: 80%;
@@ -24,29 +16,6 @@
 .logo h1 {
   font-size: 28px;
   color: white;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-.nav-links li {
-  font-size: 18px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  transition: background-color 0.3s ease;
-  margin-right: 10px;
-}
-
-.nav-links a:hover {
-  background-color: #5c6bc0;
-  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -79,6 +48,10 @@ img {
 .header-container {
   position: relative;
   background-color: #3c56b6;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3000;
 }
 
 nav {
@@ -88,7 +61,7 @@ nav {
 
 nav ul {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 nav li {
@@ -108,6 +81,7 @@ nav a {
   color: var(--text-color);
   padding: 1em 2em;
   transition: background-color 150ms ease;
+  align-items: center;
 }
 
 nav a:hover {
