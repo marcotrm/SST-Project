@@ -42,7 +42,11 @@ export default function HomePage() {
           {Travels.map((travel) => (
             <div className="flight-card" key={travel.id}>
               <h3>{travel.destination}</h3>
-              <img src={travel.image} alt="destination" />
+              <img
+                className="destination-img"
+                src={travel.image}
+                alt="destination"
+              />
               <h4>Data di inizio: {travel.departure_date}</h4>
               <h5>Data di ritorno: {travel.return_date}</h5>
               <div className="btn-cntainer">
