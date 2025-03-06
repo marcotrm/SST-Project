@@ -109,13 +109,13 @@ export default function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="#">Contact</a>
           </li>
           <li>
-            <a href="flights">Flights</a>
+            <a href="#">Flights</a>
           </li>
           <li>
-            <a className="accent-link" href="/Login">
+            <a className="accent-link" href="#">
               Login
             </a>
           </li>
